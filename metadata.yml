@@ -8,28 +8,26 @@ Description: MolE is a foundation model for chemistry developed by Recursion. It
   steps. First it follows a novel self-supervised strategy using the graph representation
   of ~842 million molecules designed to properly learn to represent chemical structures.
   It is followed by a massive multi-task training to assimilate biological information.
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization, Projection,
-  Similarity search, Generation
-Input: Compound
+Deployment:
+  - Local
+Source: Local
+Source Type: External
+Task: Annotation
+Subtask: Featurization
+Input: 
+  - Compound
 Input Dimension: 1
-Output: Value, Score
+Output: Value
 Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: 'The output of this template model should be interpreted like this.
-
-  '
+Output Consistency: Fixed
+Interpretation: 'The output of this template model should be interpreted like this.'
 Tag:
-- Embedding
+  - Embedding
 Biomedical Area:
-- Biomedical Area 1
-- Biomedical Area 2
+  - Any
 Target Organism:
-- Target Organism 1
-- Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
+  - Not Applicable
+Publication Type: Peer reviewed
 Publication Year: 2025
 Publication: https://www.nature.com/articles/s41467-024-53751-y
 Source Code: https://github.com/recursionpharma/mole_public
